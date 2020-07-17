@@ -1,9 +1,72 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+html, body {
+  height: 100%;
 }
 
-#greeting-container {
-  margin-top: 20px;
+* {
+    padding: 0pt;
+    margin: 0pt;
+}
+
+body {
+    font-family: "Consolas";
+    font-size: 10pt;
+    background: #1c1823;
+    color: #FFF0F5;
+}
+
+pre {
+    display: inline;
+    white-space: pre-wrap; 
+}
+
+#content {
+  background: #2c2833;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  height: 100%;
+  width: 800px;
+}
+
+a {
+    color: #FFF0F5;
+    text-decoration: underline;
+}
+
+.prompt span:nth-of-type(1) {
+    color: #45C758;
+}
+
+.prompt span:nth-of-type(2) {
+    color: #3B79C7;
+}
+
+.prompt-user {
+    color: #45C758;
+}
+
+.prompt-path {
+    color: #3B79C7;
+}
+
+.wide_img {
+    width: 800px;
+}
+
+.cursor {
+    width: 1px;
+    height: 80%;
+    background-color: gray;
+    left: 5px;
+    top: 10%;
+    animation-name: blink;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
