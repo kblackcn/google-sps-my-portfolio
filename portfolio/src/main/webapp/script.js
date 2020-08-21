@@ -13,8 +13,6 @@
 // limitations under the License.
 
 (function() {
-    
-
     function formatDate(date) {
         let diff = new Date() - date; // the difference in milliseconds
 
@@ -69,12 +67,6 @@
         if (e.charCode != 13) {
             return;
         }
-        current += 1;
-        target = "part_" + current;
-        item = document.getElementById(target);
-        if (item != null) {
-            item.setAttribute("style", "");
-        }
         var comment_box = document.getElementById("comment_box");
         if (current == 6) {
             comment_box.focus();
@@ -91,5 +83,4 @@
             }
         }
     };
-
 })();
